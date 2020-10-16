@@ -1,0 +1,3 @@
+﻿SQL server name: DESKTOP-CEFU10F
+
+Video 33 @ 3:34 note on udemy talks about dependency injection from the pipeline and needing to use objects if you don't do this. 
