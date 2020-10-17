@@ -15,6 +15,7 @@ namespace BookStore.Model
         private string mName;
 
         private string mAuthor;
+        private string mISBN;
 
         public Book()
         {
@@ -37,6 +38,12 @@ namespace BookStore.Model
         {
             get { return mAuthor; }
             set { this.mAuthor = value; }
+        }
+
+        public string ISBN
+        {
+            get { return mISBN; }
+            set { this.mISBN = value; }
         }
 
     }

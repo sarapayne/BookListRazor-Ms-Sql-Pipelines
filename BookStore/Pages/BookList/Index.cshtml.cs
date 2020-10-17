@@ -19,17 +19,14 @@ namespace BookStore.Pages.BookList
             mDb = db;
         }
 
-        private IEnumerable<Book> mBooks;
+        public IEnumerable<Book> Books { get; set; }
 
         public async Task OnGet()
         {
-            mBooks = await mDb.Book.ToListAsync();
+            Books = await mDb.Book.ToListAsync();
         }
 
-        public IEnumerable<Book> Books
-        {
-            get { return mBooks; }
-            set { this.mBooks = value; }
-        }
+       
+        
     }
 }
