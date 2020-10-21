@@ -9,42 +9,17 @@ namespace BookStore.Model
     public class Book
     {
         [Key]
-        private int mId;
+        public int Id { get; set; }
         
         [Required]
-        private string mName;
+        public string Name { get; set; }
 
-        private string mAuthor;
-        private string mISBN;
+        public string Author { get; set; }
+        public string ISBN { get; set; }
 
         public Book()
         {
 
         }
-
-        public int ID
-        {
-            get { return mId; }
-            set { this.mId = value; }
-        }
-
-        public string Name
-        {
-            get { return mName; }
-            set { this.mName = value; }
-        }
-
-        public string Author
-        {
-            get { return mAuthor; }
-            set { this.mAuthor = value; }
-        }
-
-        public string ISBN
-        {
-            get { return mISBN; }
-            set { this.mISBN = value; }
-        }
-
     }
 }
